@@ -1,0 +1,1 @@
+{"name":"jasurbek-portfolio","version":"1.0.0","private":true,"type":"module","scripts":{"start":"node preview.mjs"},"engines":{"node":">=22"}}

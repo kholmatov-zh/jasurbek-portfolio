@@ -1,0 +1,8 @@
+.DS_Store
+.agents/
+.openai/
+.vscode/
+node_modules/
+.env
+.env.*
+!.env.example

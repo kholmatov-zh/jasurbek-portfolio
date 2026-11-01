@@ -1,0 +1,37 @@
+:root{--demo-orange:#FC4C13;--demo-gray:#808080;--demo-bg:#1D1D1D}
+body{background:var(--demo-bg);color:#fff}header{background:var(--demo-bg)}
+.brand .brand-mark{border-color:#FC4C1380;background:#FC4C1315;color:#FC4C13}
+.brand .brand-labs,h1 span,.eyebrow,.num{color:#FC4C13}.brand .brand-name{color:#fff}
+.power{color:#fff;background:#FC4C1320;border-color:#FC4C1380}.power.off{color:#fff}
+.tag{background:#FC4C1310;border-color:#FC4C1340;color:#fff}
+.live-dot{display:inline-block;width:6px;height:6px;border-radius:50%;background:#FC4C13;margin-right:6px}
+.side{background:#101010;border-color:#80808055}.profile{padding:22px}.profile h2{margin-top:10px;font-size:23px;color:#fff}
+.team-eyebrow{font:9px ui-monospace,monospace;letter-spacing:1.4px;color:#FC4C13}
+.sprint-summary{padding:18px 22px;border-bottom:1px solid #80808033}.sprint-summary>div{display:flex;justify-content:space-between;gap:10px;font-size:11px;color:#ddd}
+.sprint-summary progress{width:100%;height:5px;margin-top:14px;accent-color:#FC4C13}.sprint-summary>span{display:block;font:9px ui-monospace,monospace;color:#808080;margin-top:9px}
+.chat{max-height:480px;min-height:340px;scroll-behavior:smooth;padding:18px}
+.message{background:#1D1D1D;color:#fff;border:1px solid #80808030;font-size:12px;padding:12px;border-radius:9px;margin-bottom:10px}
+.message b{display:flex;justify-content:space-between;gap:10px;font-size:10px;margin-bottom:6px;color:var(--agent-color,#FC4C13)}
+.message time{color:#808080;font-weight:400;font-size:9px}.message.system{border-color:#FC4C1340;color:#ccc}
+.team-note{font-size:10px;line-height:1.8;color:#aaa;border-top:1px solid #80808033;padding:15px 22px}
+.station{cursor:pointer;outline-offset:2px}.station .nameplate{display:inline-flex;align-items:center;gap:3px}.nameplate i{background:#FC4C13}
+.station .role{font-size:9px;line-height:1.6;min-height:28px;margin-top:19px}.station.selected{border-color:#FC4C13;background:#ffffff50}
+.station.working .monitor:after{content:'</>';color:#FC4C13;font-size:13px}
+.station.speaking{border-color:#FC4C13;background:#ffffff45;z-index:6}
+.station .desk{margin-top:64px}.station .person{transition:translate 1800ms ease-in-out;pointer-events:none}
+.station .person:before{background:var(--skin,#ddb38d)}
+.station .person .typing-hands{position:absolute;width:10px;height:5px;left:-4px;top:20px;border-radius:3px;background:var(--skin,#ddb38d);box-shadow:29px 0 var(--skin,#ddb38d);animation:type-hands .4s steps(2) infinite}
+.station.walking{z-index:10}.station.walking .person{animation:none;translate:var(--walk-x,0px) var(--walk-y,0px)}
+.station.walking .typing-hands{animation:none}
+.speech{position:absolute;top:42px;left:4px;right:4px;background:#fff;color:#1D1D1D;border:1px solid #FC4C1370;border-radius:9px;padding:8px 10px;font-size:10px;line-height:1.4;opacity:0;translate:0 4px;transition:opacity .2s,translate .2s;pointer-events:none;z-index:5;box-shadow:0 3px 10px #1D1D1D15}
+.speech:after{content:'';position:absolute;bottom:-5px;left:50%;width:8px;height:8px;rotate:45deg;background:#fff;border-right:1px solid #FC4C1370;border-bottom:1px solid #FC4C1370}
+.station.speaking .speech{opacity:1;translate:0 0}
+.person .agent-badge{position:absolute;top:10px;left:11px;font:7px ui-monospace,monospace;color:#fff;letter-spacing:-1px}
+.work-window{background:#101010;border-color:#80808055}.work-title{background:#1D1D1D}.work-title small{color:#aaa}.work-state{color:#FC4C13}
+.work-output{color:#ddd;background:#000;border-color:#80808030;height:155px}.work-stage{color:#bbb;min-height:44px;line-height:1.5;padding-top:12px}.work-progress{color:#aaa}.work-progress progress{accent-color:#FC4C13}
+.work-dot{background:#FC4C13}.work-footer{color:#aaa}.work-window.selected{border-color:#FC4C13}
+.notice{color:#aaa}.monitor-heading p,.intro p{color:#ccc}
+.paused .typing-hands{animation-play-state:paused}.paused .person{transition:none}.paused .chat{scroll-behavior:auto}
+@keyframes type-hands{to{transform:translateY(-2px)}}
+@media(max-width:500px){.station .desk{margin-top:76px}.station .role{font-size:8px}.speech{font-size:9px;padding:7px;top:40px}.chat{max-height:300px;min-height:220px}.station{min-height:195px}.team-eyebrow{font-size:8px}}
+@media(prefers-reduced-motion:reduce){.person,.typing-hands{animation:none!important}.station .person,.speech{transition:none}.chat{scroll-behavior:auto}}
